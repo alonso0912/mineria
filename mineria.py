@@ -17,11 +17,11 @@ st.title("📊 Dashboard de Retención y Satisfacción Estudiantil")
 
 # Simulamos un dataset universitario
 data = {
-    "Year": [2020, 2020, 2020, 2021, 2021, 2021, 2022, 2022, 2022, 2023, 2023, 2023],
-    "Department": ["Ingeniería", "Ciencias", "Negocios"] * 4,
-    "Term": ["Spring", "Fall"] * 6,
-    "RetentionRate": [0.78, 0.81, 0.76, 0.80, 0.83, 0.79, 0.82, 0.85, 0.81, 0.84, 0.86, 0.83],
-    "SatisfactionScore": [4.1, 4.3, 4.0, 4.2, 4.4, 4.1, 4.3, 4.5, 4.2, 4.5, 4.6, 4.3]
+    "Año": [2020, 2020, 2020, 2021, 2021, 2021, 2022, 2022, 2022, 2023, 2023, 2023],
+    "Departamentp": ["Ingeniería", "Ciencias", "Negocios"] * 4,
+    "Termino": ["Primavera", "Otoño"] * 6,
+    "Tasa de retencion": [0.78, 0.81, 0.76, 0.80, 0.83, 0.79, 0.82, 0.85, 0.81, 0.84, 0.86, 0.83],
+    "Puntaje de satisfacción": [4.1, 4.3, 4.0, 4.2, 4.4, 4.1, 4.3, 4.5, 4.2, 4.5, 4.6, 4.3]
 }
 df = pd.DataFrame(data)
 
