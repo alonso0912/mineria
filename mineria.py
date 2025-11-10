@@ -17,17 +17,17 @@ st.title("📊 Dashboard de Retención y Satisfacción Estudiantil")
 
 # Simulamos un dataset universitario
 data = {
-    "Año": [2020, 2020, 2020, 2021, 2021, 2021, 2022, 2022, 2022, 2023, 2023, 2023],
-    "Departamentp": ["Ingeniería", "Ciencias", "Negocios"] * 4,
-    "Termino": ["Primavera", "Otoño"] * 6,
-    "Tasa de retencion": [0.78, 0.81, 0.76, 0.80, 0.83, 0.79, 0.82, 0.85, 0.81, 0.84, 0.86, 0.83],
-    "Puntaje de satisfacción": [4.1, 4.3, 4.0, 4.2, 4.4, 4.1, 4.3, 4.5, 4.2, 4.5, 4.6, 4.3]
+    "Year": [2020, 2020, 2020, 2021, 2021, 2021, 2022, 2022, 2022, 2023, 2023, 2023],
+    "Department": ["Ingeniería", "Ciencias", "Negocios"] * 4,
+    "Term": ["Primavera", "Otoño"] * 6,
+    "RetentionRate": [0.78, 0.81, 0.76, 0.80, 0.83, 0.79, 0.82, 0.85, 0.81, 0.84, 0.86, 0.83],
+    "SatisfactionScore": [4.1, 4.3, 4.0, 4.2, 4.4, 4.1, 4.3, 4.5, 4.2, 4.5, 4.6, 4.3]
 }
 df = pd.DataFrame(data)
 
 # 🎛️ Filtros interactivos
 st.sidebar.header("Filtros")
-year = st.sidebar.multiselect("Selecciona Año(s)", sorted(df["year"].unique()), default=df["year"].unique())
+year = st.sidebar.multiselect("Selecciona Año(s)", sorted(df["Year"].unique()), default=df["Year"].unique())
 department = st.sidebar.multiselect("Selecciona Departamento(s)", df["Department"].unique(), default=df["Department"].unique())
 term = st.sidebar.multiselect("Selecciona Periodo(s)", df["Term"].unique(), default=df["Term"].unique())
 
