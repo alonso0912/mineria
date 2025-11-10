@@ -106,7 +106,7 @@ st.subheader("📈 Tendencia de Retención por Año y Departamento")
 fig1, ax1 = plt.subplots(figsize=(8, 4))
 for dept in df_filtrado["Departamento"].unique():
     subset = df_filtrado[df_filtrado["Departamento"] == dept]
-    ax1.plot(subset["Año"], subset["Tasa de retencion"] * 100, marker="o", label=dept)
+    ax1.plot(subset["Año"], subset["Tasa de retencion"], marker="o", label=dept)
 ax1.set_xlabel("Año")
 ax1.set_ylabel("Retención (%)")
 ax1.legend(title="Departamento")
