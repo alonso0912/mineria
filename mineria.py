@@ -27,7 +27,7 @@ df = pd.DataFrame(data)
 
 # 🎛️ Filtros interactivos
 st.sidebar.header("Filtros")
-year = st.sidebar.multiselect("Selecciona Año(s)", sorted(df["Year"].unique()), default=df["Year"].unique())
+year = st.sidebar.multiselect("Selecciona Año(s)", sorted(df["year"].unique()), default=df["year"].unique())
 department = st.sidebar.multiselect("Selecciona Departamento(s)", df["Department"].unique(), default=df["Department"].unique())
 term = st.sidebar.multiselect("Selecciona Periodo(s)", df["Term"].unique(), default=df["Term"].unique())
 
