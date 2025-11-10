@@ -9,7 +9,9 @@ Original file is located at
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile streamlit_app.py
-# 
+#
+# !pip install streamlit
+#
 # import pandas as pd
 # import streamlit as st
 # import matplotlib.pyplot as plt
